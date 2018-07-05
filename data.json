@@ -1,0 +1,19 @@
+[
+    {
+        "name":"Shahid",
+        "age":"24",
+        "company":"google"
+    },
+    {
+        "name":"Sonu",
+        "age":"25",
+        "company":"microsoft"
+
+    },
+    {
+        "name":"tej",
+        "age":"26",
+        "company":"Apple"
+            
+    }
+]

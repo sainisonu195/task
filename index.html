@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task</title>
+</head>
+<body>
+    <div  ng-controller="myCtr">
+        <table border="1" background-color="red">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Company</th>
+                <th>Remove</th>
+            </tr>
+            <tr ng-repeat="Student in Students">
+                <td>{{Student.name}}</td>
+                <td>{{Student.age}}</td>
+                <td>{{Student.company}}</td>
+                 <td ng-click="removeStudent(Student)">X</td> 
+            </tr>
+        </table>
+        <form ng-submit="addStudents()">
+            <input type="text" placeholder="name" ng-model="newName"><br />
+            <input type="text" placeholder="age" ng-model="newAge"><br />
+            <input type="text" placeholder="company" ng-model="newCompany"><br />
+            <input type="submit" value="submit">
+            
+        </form>
+    </div>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
